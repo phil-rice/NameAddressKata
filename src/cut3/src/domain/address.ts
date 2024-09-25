@@ -5,6 +5,7 @@ export interface Address {
     city: string;
     county: string;
     country: string;
+    rusky: string
 }
 
 export const emptyAddress: Address = {
@@ -14,4 +15,5 @@ export const emptyAddress: Address = {
     city: '',
     county: '',
     country: '',
+    rusky: ""
 }

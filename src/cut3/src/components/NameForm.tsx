@@ -38,12 +38,19 @@ export const NameForm = () => {
         onChange: handleChange
     }
 
+    const ageNameInput: fieldInputs<Name> = {
+        id: "age",
+        value: formData,
+        onChange: handleChange
+    }
+
     return (
         <SimpleFormContainer>
             <SimpleFormField<Name> fieldInputs={titletNameInput} getRenderer={getRender}
                                    renderInput={{type: "dropdown", options: titleOptions}}/>
             <SimpleFormField<Name> fieldInputs={firstNameInput} getRenderer={getRender} renderInput="text"/>
             <SimpleFormField<Name> fieldInputs={lastNameInput} getRenderer={getRender} renderInput="text"/>
+            <SimpleFormField<Name> fieldInputs={ageNameInput} getRenderer={getRender} renderInput={"text"}/>
         </SimpleFormContainer>
     )
 }

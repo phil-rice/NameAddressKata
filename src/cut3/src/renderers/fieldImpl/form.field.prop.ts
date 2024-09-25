@@ -1,4 +1,4 @@
-import {fieldInputs, GetRenderer, RenderDef} from "./simpleImpl/simple.renderers";
+import {fieldInputs, GetRenderer, RenderDef} from "../simpleImpl/simple.renderers";
 
 export interface FormFieldProps<T> {
     fieldInputs: fieldInputs<T>

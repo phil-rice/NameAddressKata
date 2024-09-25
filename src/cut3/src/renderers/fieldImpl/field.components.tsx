@@ -1,0 +1,17 @@
+import {GetRenderer, RenderDef} from "../simpleImpl/simple.renderers";
+import {FieldContainerType} from "./form.container.props";
+
+export type FieldComponentsProp<T> = {
+    id: keyof T,
+    renderer: RenderDef
+};
+
+export type FieldComponents<T> = {
+    getRenderer: GetRenderer,
+    FieldContainer: FieldContainerType
+    Field: (prop: FieldComponentsProp<T>) => JSX.Element
+};
+/**
+ * This represents essentially our custom hook
+ */
+export type FieldComponentsFn = <T, >(formData: T, setFormData: (t: T) => void) => FieldComponents<T>

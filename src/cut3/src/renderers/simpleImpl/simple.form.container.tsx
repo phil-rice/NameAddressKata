@@ -1,4 +1,4 @@
-import {FieldContainerType} from "../form.container.props";
+import {FieldContainerType} from "../fieldImpl/form.container.props";
 import React from "react";
 
 /**

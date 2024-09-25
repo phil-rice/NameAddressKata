@@ -1,4 +1,4 @@
-import {FormFieldProps} from "../form.field.prop";
+import {FormFieldProps} from "../fieldImpl/form.field.prop";
 
 export const SimpleFormField = <T, >(props: FormFieldProps<T>) => {
 
