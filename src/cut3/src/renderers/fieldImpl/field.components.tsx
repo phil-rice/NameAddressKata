@@ -3,7 +3,7 @@ import {FieldContainerType} from "./form.container.props";
 
 export type FieldComponentsProp<T> = {
     id: keyof T,
-    renderer: RenderDef
+    renderer?: RenderDef
 };
 
 export type FieldComponents<T> = {
@@ -11,7 +11,9 @@ export type FieldComponents<T> = {
     FieldContainer: FieldContainerType
     Field: (prop: FieldComponentsProp<T>) => JSX.Element
 };
+
+export type Field = <T, > (prop: FieldComponentsProp<T>) => JSX.Element;
 /**
  * This represents essentially our custom hook
  */
-export type FieldComponentsFn = <T, >(formData: T, setFormData: (t: T) => void) => FieldComponents<T>
+export type FieldComponentsFn = <T, >(formData: T, setFormData: (t: T) => void) => Field
