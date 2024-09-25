@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a5b58e2-7aad-4728-9a55-9a0a780b8ecb" name="Changes" comment="master - cut3 was created">
+    <list default="true" id="6a5b58e2-7aad-4728-9a55-9a0a780b8ecb" name="Changes" comment="master - cut4 was created">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +35,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Admin/Desktop/NameAddressByHand/root-app/src/cut3",
+    "last_opened_file_path": "C:/Users/Admin/Desktop/NameAddressByHand/root-app/src/cut4",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -45,6 +45,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\NameAddressByHand\root-app\src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -57,6 +62,7 @@
       <workItem from="1727211012616" duration="190000" />
       <workItem from="1727213960282" duration="339000" />
       <workItem from="1727253711792" duration="806000" />
+      <workItem from="1727284836882" duration="623000" />
     </task>
     <task id="LOCAL-00001" summary="master - added project on github + cut1 was created">
       <option name="closed" value="true" />
@@ -90,7 +96,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727254275711</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="master - cut4 was created">
+      <option name="closed" value="true" />
+      <created>1727285165539</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727285165539</updated>
+    </task>
+    <task id="LOCAL-00006" summary="master - cut4 was created">
+      <option name="closed" value="true" />
+      <created>1727285400904</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727285400904</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +134,7 @@
     <MESSAGE value="master - added project on github + cut1 was created" />
     <MESSAGE value="master - cut2 was created" />
     <MESSAGE value="master - cut3 was created" />
-    <option name="LAST_COMMIT_MESSAGE" value="master - cut3 was created" />
+    <MESSAGE value="master - cut4 was created" />
+    <option name="LAST_COMMIT_MESSAGE" value="master - cut4 was created" />
   </component>
 </project>
