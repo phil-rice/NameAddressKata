@@ -1,10 +1,10 @@
-import {FormFieldContainerProps} from "../form.container.props";
+import {FieldContainerType} from "../form.container.props";
 import React from "react";
 
 /**
  * Very simple, just like the FormContainer in cut2
  */
-export const SimpleFormContainer: React.FC<FormFieldContainerProps> = ({children}) => {
+export const SimpleFormContainer: FieldContainerType = ({children}) => {
     return (
         <form>
             {children}

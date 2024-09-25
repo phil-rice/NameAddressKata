@@ -1,4 +1,4 @@
-import React, {ReactEventHandler, useState} from "react";
+import React, {useState} from "react";
 import {initialName, Name} from "../domain/name";
 import {SimpleFormContainer} from "../renderers/simpleImpl/simple.form.container";
 import {SimpleFormField} from "../renderers/simpleImpl/simple.form.field";
@@ -14,7 +14,6 @@ export const titleOptions = [
 
 export const NameForm = () => {
     const [formData, setFormData] = useState<Name>(initialName);
-
     const handleChange = (e: React.ChangeEvent<HTMLSelectElement | HTMLInputElement>) => {
         const {name, value} = e.target;
         setFormData((prevState) => ({
