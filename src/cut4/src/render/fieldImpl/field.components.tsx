@@ -6,11 +6,6 @@ export type FieldComponentsProp<T> = {
     renderer?: RenderDef
 };
 
-export type FieldComponents<T> = {
-    getRenderer: GetRenderer,
-    FieldContainer: FieldContainerType
-    Field: (prop: FieldComponentsProp<T>) => JSX.Element
-};
 
 export type Field = <T, > (prop: FieldComponentsProp<T>) => JSX.Element;
 /**

@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {AddressForm, NameForm} from "./components/NameForm";
+import {countries, Country, CountryProvider, isCountry} from "./render/country/country";
+
+const country = window.location.search.split('=')[1] as Country;
+if (country && !isCountry(country))
+    throw new Error('Failed to get the country from the url');
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <CountryProvider country={country}>
+                <NameForm/>
+                <AddressForm/>
+            </CountryProvider>
+        </div>
+    );
 }
 
 export default App;

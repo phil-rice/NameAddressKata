@@ -16,9 +16,7 @@ export type fieldInputs<T, > = {
  * The way it is written, FieldRenderer isn't generic itself. That (<T> (... means
  * that we specify the type only when calling the function.
  */
-export type FieldRenderer = <T, >(
-    fieldInputs: fieldInputs<T>
-) => JSX.Element
+export type FieldRenderer = <T, >(fieldInputs: fieldInputs<T>) => JSX.Element
 
 /**
  * an implementation of FieldRenderer that renders a text input
