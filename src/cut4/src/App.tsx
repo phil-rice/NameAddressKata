@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
-import {AddressForm, NameForm} from "./components/NameForm";
+import {NameForm} from "./components/NameForm";
 import {countries, Country, CountryProvider, isCountry} from "./render/country/country";
+import {AddressForm} from "./components/AddressForm";
 
 const country = window.location.search.split('=')[1] as Country;
 if (country && !isCountry(country))
