@@ -79,18 +79,38 @@ export type GenericData<T, > = {
 }
 
 export const renderGenericObject = <T, >(prop: GenericData<T>) => {
-
     const {value, defn} = prop;
-    const [obj, setObj] = useState<Partial<T>>(value || {});
-    const {Field} = useComponents(obj, setObj);
 
-    if (!defn)
+    // Initialize state with the provided values or as an empty object.
+    const [obj, setObj] = useState<Partial<T>>(value || {});
+    const {Field} = useComponents(obj, setObj); // Custom hook for managing fields.
+
+    // Throw an error if no definitions are provided.
+    if (!defn) {
         throw new Error(`No definitions provided for object`);
+    }
+
     return (
         <SimpleFormContainer>
-            {mapKeys(defn, (key) => (
-                <Field id={key} renderer={defn[key]}/>
-            ))}
+            {mapKeys(defn, (key) => {
+                const rendererDef = defn[key];
+
+                // If the renderer definition is a group, render nested fields.
+                if (typeof rendererDef === 'object' && rendererDef.type === "group") {
+                    const nestedValue = obj[key] || {}; // Get the value for the nested object.
+
+                    return (
+                        <div>
+                            {renderGenericObject({
+                                defn: rendererDef.defn,
+                                value: nestedValue,
+                            })}
+                        </div>
+                    );
+                }
+                // Render the field normally for non-nested definitions.
+                return <Field id={key} renderer={rendererDef}/>;
+            })}
         </SimpleFormContainer>
     );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import {ObjectDef} from "../RenderObject";
+import {ObjectDef, renderGenericObject} from "../RenderObject";
 import {mapKeys} from "../../utils/utils";
 import {useComponents} from "../../hooks/use.component";
 
@@ -67,13 +67,37 @@ export const renderDropDown = (options: string[]): FieldRenderer => <T, >(
  * The following 2 types are added compared to cut2 for making the code much
  * cleaner for once but also to introduce the concept of data driven in our code.
  */
-export type RenderDef = 'text' | { type: 'dropdown', options: string[] };
+export type RenderDef =
+    | "text"
+    | { type: "dropdown"; options: string[] }
+    | { type: "group"; defn: ObjectDef<any> };  // New type to handle nested objects
+
 export type GetRenderer = (render: RenderDef) => FieldRenderer;
 
-export const getRender: GetRenderer = (render: RenderDef) => {
-    if (render === 'text') {
+export const getRender = (renderDef: RenderDef) => {
+    if (renderDef === "text") {
         return renderStringInput;
-    } else {
-        return renderDropDown(render.options);
     }
+
+    if (typeof renderDef === "object") {
+        if (renderDef.type === "dropdown") {
+            return renderDropDown(renderDef.options);
+        } else if (renderDef.type === "group") {
+            // If the render type is a 'group', return a nested object renderer
+            return <T, >(fieldInputs: fieldInputs<T>) => {
+                const {value, id} = fieldInputs;
+
+                // This ensures that if the value is undefined, it starts as an empty object to avoid rendering issues.
+                const nestedValue = value[id] || {};
+
+                // Render the nested object fields using `renderGenericObject` for nested groups
+                return renderGenericObject({
+                    defn: renderDef.defn,
+                    value: nestedValue,
+                });
+            };
+        }
+    }
+
+    throw new Error("Unsupported RenderDef type");
 };

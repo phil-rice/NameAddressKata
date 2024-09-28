@@ -1,6 +1,5 @@
-/*
 //export type Hitpoint = number;
-export type Color = 'blue' | 'green';
+export type Color = 'blue' | 'green' | '';
 
 export interface Dragon {
     body: Body;
@@ -16,7 +15,7 @@ export interface Body {
 export interface Head {
     leftEye: Eye;
     rightEye: Eye;
-    hitpoints: number;
+    hitpoints: string;
 }
 
 export interface Eye {
@@ -25,7 +24,7 @@ export interface Eye {
 
 export interface Chest {
     stomach: Stomach;
-    hitpoints: number;
+    hitpoints: string;
 }
 
 export interface Stomach {
@@ -33,13 +32,13 @@ export interface Stomach {
 }
 
 export interface Wing {
-    hitpoints: number;
+    hitpoints: string;
 }
 
-export const dragonData: Dragon = {
+/*export const dragonData: Dragon = {
     body: {
         chest: {
-            hitpoints: 10,
+            hitpoints: '10',
             stomach: {
                 contents: ['the adventurer'],
             },
@@ -50,8 +49,15 @@ export const dragonData: Dragon = {
     head: {hitpoints: 5, leftEye: {color: 'blue'}, rightEye: {color: 'green'}},
 };*/
 
+/*
 export interface Dragon {
     body: string,
     head: string;
     wings: string;
+    claws: Claws;
 }
+
+export interface Claws {
+    length: string,
+    sharpness: string
+}*/

@@ -4,6 +4,7 @@ import {NameForm} from "./components/NameForm";
 import {countries, Country, CountryProvider, isCountry} from "./render/country/country";
 import {AddressForm} from "./components/AddressForm";
 import {GenericNameForm} from "./components/GenericForm";
+import {DragonForm} from "./components/DragonForm";
 
 const country = window.location.search.split('=')[1] as Country;
 if (country && !isCountry(country))
@@ -16,7 +17,8 @@ function App() {
                 <NameForm/>
                 <AddressForm/>
             </CountryProvider>*/}
-            <GenericNameForm/>
+            {/*<GenericNameForm/>*/}
+            <DragonForm/>
         </div>
     );
 }
