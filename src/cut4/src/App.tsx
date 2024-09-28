@@ -3,6 +3,7 @@ import './App.css';
 import {NameForm} from "./components/NameForm";
 import {countries, Country, CountryProvider, isCountry} from "./render/country/country";
 import {AddressForm} from "./components/AddressForm";
+import {GenericNameForm} from "./components/GenericForm";
 
 const country = window.location.search.split('=')[1] as Country;
 if (country && !isCountry(country))
@@ -11,10 +12,11 @@ if (country && !isCountry(country))
 function App() {
     return (
         <div>
-            <CountryProvider country={country}>
+            {/*<CountryProvider country={country}>
                 <NameForm/>
                 <AddressForm/>
-            </CountryProvider>
+            </CountryProvider>*/}
+            <GenericNameForm/>
         </div>
     );
 }

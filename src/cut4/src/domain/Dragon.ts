@@ -1,3 +1,4 @@
+/*
 //export type Hitpoint = number;
 export type Color = 'blue' | 'green';
 
@@ -47,4 +48,10 @@ export const dragonData: Dragon = {
         rightWing: {hitpoints: 5},
     },
     head: {hitpoints: 5, leftEye: {color: 'blue'}, rightEye: {color: 'green'}},
-};
+};*/
+
+export interface Dragon {
+    body: string,
+    head: string;
+    wings: string;
+}

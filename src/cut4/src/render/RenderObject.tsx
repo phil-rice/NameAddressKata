@@ -72,3 +72,25 @@ export const renderObject = <Type extends string, T>(defns: CountryToObjectDef<T
             </SimpleFormContainer>
         )
     };
+
+export type GenericData<T, > = {
+    defn: ObjectDef<T>;
+    value: T
+}
+
+export const renderGenericObject = <T, >(prop: GenericData<T>) => {
+
+    const {value, defn} = prop;
+    const [obj, setObj] = useState<Partial<T>>(value || {});
+    const {Field} = useComponents(obj, setObj);
+
+    if (!defn)
+        throw new Error(`No definitions provided for object`);
+    return (
+        <SimpleFormContainer>
+            {mapKeys(defn, (key) => (
+                <Field id={key} renderer={defn[key]}/>
+            ))}
+        </SimpleFormContainer>
+    );
+};
