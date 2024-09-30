@@ -35,7 +35,7 @@ export interface Wing {
     hitpoints: string;
 }
 
-export const dragonData: Dragon = {
+export const initialDragon: Dragon = {
     body: {
         chest: {
             hitpoints: '10',

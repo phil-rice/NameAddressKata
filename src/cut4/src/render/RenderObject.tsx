@@ -76,7 +76,7 @@ export const renderObject = <Type extends string, T>(defns: CountryToObjectDef<T
 
 export type GenericData<T, > = {
     defn: ObjectDef<T>;
-    value: T
+    value?: T
 }
 
 export const renderGenericObject = <T, >(prop: GenericData<T>) => {
