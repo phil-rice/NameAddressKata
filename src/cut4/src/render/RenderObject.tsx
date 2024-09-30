@@ -4,6 +4,7 @@ import {useComponents} from "../hooks/use.component";
 import {mapKeys} from "../utils/utils";
 import {RenderDef} from "./simpleImpl/simple.renderers";
 import {SimpleFormContainer} from "./simpleImpl/simple.form.container";
+import {LensAndPath} from "../utils/lens";
 
 /**
  * These type is used to map each key of an interface / structure that we pass,
@@ -109,8 +110,55 @@ export const renderGenericObject = <T, >(prop: GenericData<T>) => {
                     );
                 }
                 // Render the field normally for non-nested definitions.
-                return <Field id={key} renderer={rendererDef}/>;
+                return (
+                    <Field id={key} renderer={rendererDef}/>
+                );
+
             })}
         </SimpleFormContainer>
     );
 };
+
+/*export const renderGenericObjectWithLens = <T, >(prop: GenericData<T>, lens: LensAndPath<T, any>) => {
+    const {value, defn} = prop;
+    const [obj, setObj] = useState<Partial<T>>(value || {});
+    const {Field} = useComponents(obj, setObj);
+
+    if (!defn) {
+        throw new Error(`No definitions provided for object`);
+    }
+
+    return (
+        <SimpleFormContainer>
+            {mapKeys(defn, (key) => {
+                const rendererDef = defn[key];
+                const focusedLens = lens.focusOn(key); // Use the lens to focus on the current property
+
+                if (typeof rendererDef === 'object' && rendererDef.type === "group") {
+                    const nestedValue = focusedLens.get(obj); // Get the value for the nested object
+                    return (
+                        <div>
+                            {renderGenericObjectWithLens({
+                                defn: rendererDef.defn,
+                                value: nestedValue,
+                            }, focusedLens)}
+                        </div>
+                    );
+                }
+
+                return (
+                    <Field
+                        id={key}
+                        renderer={rendererDef}
+                        value={focusedLens.get(obj)} // Get the value using the lens
+                        onChange={(newValue) => {
+                            setObj(focusedLens.set(obj, newValue)); // Set the new value using the lens
+                        }}
+                    />
+                );
+            })}
+        </SimpleFormContainer>
+    );
+};*/
+
+

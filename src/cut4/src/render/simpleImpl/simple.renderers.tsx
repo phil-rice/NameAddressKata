@@ -37,7 +37,7 @@ export const renderStringInput: FieldRenderer = <T, >
             value={value[id] as string}
             onChange={onChange}
         />
-    )
+    );
 };
 /**
  * an implementation of FieldRenderer that renders a select input

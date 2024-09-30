@@ -35,7 +35,7 @@ export interface Wing {
     hitpoints: string;
 }
 
-/*export const dragonData: Dragon = {
+export const dragonData: Dragon = {
     body: {
         chest: {
             hitpoints: '10',
@@ -43,11 +43,11 @@ export interface Wing {
                 contents: ['the adventurer'],
             },
         },
-        leftWing: {hitpoints: 5},
-        rightWing: {hitpoints: 5},
+        leftWing: {hitpoints: '5'},
+        rightWing: {hitpoints: '5'},
     },
-    head: {hitpoints: 5, leftEye: {color: 'blue'}, rightEye: {color: 'green'}},
-};*/
+    head: {hitpoints: '5', leftEye: {color: 'blue'}, rightEye: {color: 'green'}},
+};
 
 /*
 export interface Dragon {
