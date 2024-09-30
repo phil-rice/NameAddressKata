@@ -4,9 +4,9 @@ import {LensAndPath} from "../../utils/lens";
 
 
 interface FieldWithLensProps<T> {
-    id: keyof T;
+    id: keyof T;  // here is actually the path[] of the lense
     renderer: RenderDef;
-    lens: LensAndPath<any, any>;
+    lens: LensAndPath<T, any>;
     obj: any;
     setObj: (o: any) => void;
 }
@@ -30,8 +30,8 @@ export const FieldWithLens = <T, >(props: FieldWithLensProps<T>) => {
     };
 
     return (
-        <div key={id as string}>
-            <label htmlFor={id as string}>{id as string}</label>
+        <div>
+            <label>{lens.path.join('.')}</label>
             {fieldRenderer(fieldInputs)}
         </div>
     );

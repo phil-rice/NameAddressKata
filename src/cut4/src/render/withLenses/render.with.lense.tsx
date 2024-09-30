@@ -28,6 +28,7 @@ export const renderGenericObjectWithLens = <T, >(
                 // Use the LensBuilder to focus on the current property
                 const focusedLens = lensBuilderInstance.focusOn(key).build();
 
+
                 if (typeof rendererDef === 'object' && rendererDef.type === 'group') {
                     return (
                         <div key={key as string}>
@@ -45,8 +46,7 @@ export const renderGenericObjectWithLens = <T, >(
                 } else {
                     return (
                         <FieldWithLens
-                            key={key as string}
-                            id={key}
+                            id={focusedLens.path.join('.')}
                             renderer={rendererDef as RenderDef}
                             lens={focusedLens}  // Pass the focused lens
                             obj={obj}

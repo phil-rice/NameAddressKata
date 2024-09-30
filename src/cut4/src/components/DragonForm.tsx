@@ -1,4 +1,4 @@
-import {GenericData, ObjectDef, renderGenericObject} from "../render/RenderObject";
+import {renderGenericObject} from "../render/RenderObject";
 import {Dragon} from "../domain/Dragon";
 import {lensBuilder} from "../utils/lens";
 import {dragonProp} from "../utils/dragon.def";
