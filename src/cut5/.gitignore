@@ -4,9 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-.pnp.cjs
-*.iml
-.yarn/
+
 # testing
 /coverage
 

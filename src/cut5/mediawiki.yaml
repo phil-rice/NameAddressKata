@@ -1,0 +1,23 @@
+mediawiki:
+  url:  http://someurl
+
+# list of index pages.flatMap(page -> getLinks(page).flatMap(link => getText(loadThe(link.page)))) )
+# try changing it to a for loop
+
+indexPages:
+    pages:
+    - page: pagename1
+      id:
+        - toc-Academic-life
+        - toc-something #These hold links. get the text from the link pages. But don't get too much!!!!
+    - pagename2
+ignore:
+    - some links that we ignore
+
+
+# listofpages.flatMap(page -> getText(loadThe(page)))
+  pages:
+    - pagename1
+    - pagename2 # just get the text from this page
+
+  #library called js-yaml

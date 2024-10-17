@@ -5,12 +5,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a5b58e2-7aad-4728-9a55-9a0a780b8ecb" name="Changes" comment="master - cut4 was created">
-      <change afterPath="$PROJECT_DIR$/src/cut4/src/render/fieldImpl/field.components.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cut4/src/render/fieldImpl/form.container.props.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cut4/src/render/simpleImpl/form.field.prop.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cut4/src/render/simpleImpl/simple.form.container.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cut4/src/render/simpleImpl/simple.form.field.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cut4/src/render/simpleImpl/simple.renderers.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut4/mediawiki.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut4/src/load.mediawiki.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut4/src/utils/dragonToDisplay.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/.pnp.loader.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/mediawiki.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/App.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/generic/components/object.defns.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/generic/components/simpleImpl/lensField.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/generic/components/simpleImpl/simple.field.components.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/generic/components/simpleImpl/simple.form.container.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/generic/components/simpleImpl/simple.renderers.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/generic/events/events.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/generic/hooks/use.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/generic/optics/optics.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/generic/optics/optics.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/generic/utils/utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/react-app-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/reportWebVitals.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/setupTests.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/thisapp/components/AddressForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/thisapp/components/NameForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/thisapp/components/edit.object.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/thisapp/country/all.countries.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/thisapp/country/country.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/thisapp/country/sw.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/thisapp/country/uk.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/thisapp/country/useObjectDefnsInCountry.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/src/thisapp/domain/ValidTypes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cut5/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cut4/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cut4/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cut4/src/components/GenericForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cut4/src/components/GenericForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cut4/src/components/NameForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cut4/src/components/NameForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cut4/src/domain/Dragon.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/cut4/src/domain/Dragon.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cut4/src/render/country/country.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cut4/src/render/country/country.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cut4/src/utils/dragon.def.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/cut4/src/utils/dragon.def.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cut4/src/utils/lens.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/cut4/src/utils/lens.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +69,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -31,32 +87,87 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Jest.LensBuilder.should get a nested value using focuson.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.optics.spec.ts.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Desktop/NameAddressByHand/root-app/src/cut4&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;handling-Dragon&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/git/NumberAddressTraining/src&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;yarn:src/cut5/package.json:react-scripts&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.2.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\git\NumberAddressTraining\src" />
       <recent name="C:\Users\Admin\Desktop\NameAddressByHand\root-app\src\cut4\src\render" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\Desktop\NameAddressByHand\root-app\src" />
+      <recent name="C:\git\NumberAddressTraining\src\cut5\src\thisapp\country" />
+      <recent name="C:\git\NumberAddressTraining\src\cut5\src\thisapp" />
+      <recent name="C:\git\NumberAddressTraining\src\cut5\src\imported\components" />
+      <recent name="C:\git\NumberAddressTraining\src\cut5\src\imported" />
+      <recent name="C:\git\NumberAddressTraining\src\cut5\src\domain" />
     </key>
+    <key name="es6.move.members.recent.items">
+      <recent name="C:\git\NumberAddressTraining\src\cut5\src\hooks\useObjectDefnsInCountry.tsx" />
+      <recent name="C:\git\NumberAddressTraining\src\cut5\src\hooks\defaultFieldComponents.tsx" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Jest.LensBuilder.should get a nested value using focuson">
+    <configuration name="LensBuilder.should get a nested value using focuson" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="yarn:src/cut5/package.json:react-scripts" />
+      <working-dir value="$PROJECT_DIR$/src/cut5" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/cut5/src/optics/optics.spec.ts" />
+      <test-names>
+        <test-name value="LensBuilder" />
+        <test-name value="should get a nested value using focuson" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="optics.spec.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="yarn:src/cut5/package.json:react-scripts" />
+      <working-dir value="$PROJECT_DIR$/src/cut5" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/cut5/src/optics/optics.spec.ts" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.LensBuilder.should get a nested value using focuson" />
+        <item itemvalue="Jest.optics.spec.ts" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -72,6 +183,18 @@
       <workItem from="1727253711792" duration="806000" />
       <workItem from="1727284836882" duration="623000" />
       <workItem from="1727288701299" duration="690000" />
+      <workItem from="1727684454325" duration="1509000" />
+      <workItem from="1727687713692" duration="578000" />
+      <workItem from="1727701558287" duration="892000" />
+      <workItem from="1727769640083" duration="3033000" />
+      <workItem from="1727867756686" duration="1903000" />
+      <workItem from="1727936654198" duration="1708000" />
+      <workItem from="1728996108788" duration="500000" />
+      <workItem from="1728996835074" duration="13559000" />
+      <workItem from="1729056425579" duration="410000" />
+      <workItem from="1729057223275" duration="712000" />
+      <workItem from="1729057967925" duration="450000" />
+      <workItem from="1729058475358" duration="9174000" />
     </task>
     <task id="LOCAL-00001" summary="master - added project on github + cut1 was created">
       <option name="closed" value="true" />
@@ -145,5 +268,29 @@
     <MESSAGE value="master - cut3 was created" />
     <MESSAGE value="master - cut4 was created" />
     <option name="LAST_COMMIT_MESSAGE" value="master - cut4 was created" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/cut5/src/imported/optics/optics.spec.ts</url>
+          <line>17</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/cut5/src/imported/optics/optics.ts</url>
+          <line>43</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/cut5/src/render/withLenses/file.with.lense.tsx</url>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
