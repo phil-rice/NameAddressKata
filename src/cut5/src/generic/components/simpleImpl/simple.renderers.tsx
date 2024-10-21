@@ -21,10 +21,6 @@ export const RenderStringInput: FieldRenderer = <T, >
     let initialState = lens.get(state);
     const [text, setText] = React.useState(initialState);
 
-    function onChange() {
-        return setValue(path, id, text)
-    }
-
     return (
         <input
             type="text"
@@ -32,9 +28,9 @@ export const RenderStringInput: FieldRenderer = <T, >
             name={id as string}
             value={text}
             onChange={e => setText(e.target.value)}
-            onBlur={onChange}
+            onBlur={() => setValue(path, id, text)}
             onKeyDown={e => {
-                if (e.key === 'Enter') onChange()
+                if (e.key === 'Enter') setValue(path, id, text)
             }}
         />
     );

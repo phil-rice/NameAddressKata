@@ -1,9 +1,5 @@
 import {FormFieldContainerProps} from "../../hooks/use.component";
 
 export const SimpleFormContainer = ({children}: FormFieldContainerProps) => {
-    return (
-        <form>
-            {children}
-        </form>
-    )
+    return <form>{children}</form>
 }

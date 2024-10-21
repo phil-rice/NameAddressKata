@@ -11,7 +11,7 @@ export const editObject = <Type extends string, T>(defns: CountryToObjectDef<Typ
     ({path}: RenderObjectProps<Type, T>): JSX.Element => {
         const {EditField, FieldContainer} = useComponents<T>(path);
         const defn = useObjectDefnsInCountry(defns, type);
-        return <FieldContainer>{mapKeys(defn, key =>
-            <EditField path={path} id={key} renderer={defn[key]}/>)}
+        return <FieldContainer>{
+            mapKeys(defn, key => <EditField path={path} id={key} renderer={defn[key]}/>)}
         </FieldContainer>
     };

@@ -4,8 +4,7 @@ import React from "react";
 import {FieldComponentsProp, SimpleComponentsMaker} from "../../hooks/use.component";
 
 export const EditField = <T, >() => (props: FieldComponentsProp) => {
-    const {id, path,
-        renderer = 'text'} = props;
+    const {id, path, renderer = 'text'} = props;
     return <div><label htmlFor={id}>{id}</label>{getRender(renderer)({path, id})}</div>
 };
 

@@ -6,27 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="6a5b58e2-7aad-4728-9a55-9a0a780b8ecb" name="Changes" comment="master - cut4 was created">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cut4/src/components/NameForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cut4/src/components/NameForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cut4/src/render/country/sw.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/cut4/src/render/country/sw.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cut5/.pnp.loader.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cut5/mediawiki.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cut5/src/App.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cut5/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cut5/src/generic/components/simpleImpl/lensField.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cut5/src/generic/components/simpleImpl/lensField.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cut5/src/generic/components/simpleImpl/lensField.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cut5/src/generic/components/simpleImpl/simple.field.components.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cut5/src/generic/components/simpleImpl/simple.field.components.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cut5/src/generic/components/simpleImpl/simple.renderers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cut5/src/generic/components/simpleImpl/simple.renderers.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cut5/src/generic/events/events.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/cut5/src/generic/events/events.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cut5/src/generic/hooks/use.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cut5/src/generic/hooks/use.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cut5/src/generic/optics/optics.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/cut5/src/generic/optics/optics.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cut5/src/generic/optics/optics.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/cut5/src/generic/optics/optics.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cut5/src/generic/components/simpleImpl/simple.form.container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cut5/src/generic/components/simpleImpl/simple.form.container.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cut5/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cut5/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cut5/src/thisapp/components/edit.object.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cut5/src/thisapp/components/edit.object.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cut5/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/cut5/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cut5/src/thisapp/components/AddressForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cut5/src/thisapp/components/AddressForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cut5/src/thisapp/components/NameForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cut5/src/thisapp/components/NameForm.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +153,7 @@
       <workItem from="1729239010154" duration="3683000" />
       <workItem from="1729502205603" duration="75000" />
       <workItem from="1729502292522" duration="1948000" />
-      <workItem from="1729508503111" duration="4600000" />
+      <workItem from="1729508503111" duration="5318000" />
     </task>
     <task id="LOCAL-00001" summary="master - added project on github + cut1 was created">
       <option name="closed" value="true" />

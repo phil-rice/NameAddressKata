@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-
 import reportWebVitals from './reportWebVitals';
 import {eventProcessor, EventProcessor, LensEvent, SetEvent} from "./generic/events/events";
 import {NameForm} from "./thisapp/components/NameForm";
@@ -28,14 +27,13 @@ export function StateOpsProvider<S>({initialEvents, processor, children}: StateP
 
     const setValue: SetFn = (path, localPath, value) => {
         const event: SetEvent = {type: 'setValue', path: appendPath(path, localPath), value};
-        setEvents([...events, event]);
+        let newEvents = [...events, event];
+        setEvents(newEvents);
         const newState = processor([event], state); //note we could run all events instead...
         setState(newState);
-        console.log('fireEvent', event, newState);
+        console.log('fireEvent', event, newEvents, newState);
     }
-
     return <StateContext.Provider value={[state, setValue]}>{children}</StateContext.Provider>
-
 }
 
 const root = ReactDOM.createRoot(
