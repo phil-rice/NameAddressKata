@@ -2,11 +2,10 @@ import {GetRenderer, RenderDefn} from "./simple.renderers";
 
 
 export type LensFieldProps<T> = {
+    path: string
     id: string
     getRenderer: GetRenderer
     renderInput: RenderDefn
-    value: Partial<T>
-    onChanged: (t: Partial<T>) => void
 }
 
 export const LensField = <T, >(props: LensFieldProps<T>) => {

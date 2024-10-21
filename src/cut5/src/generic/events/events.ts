@@ -1,10 +1,12 @@
 import {lensFromPath} from "../optics/optics";
 
+
 export type SetEvent = { type: 'setValue', path: string, value: any }
 
 export type AppendEvent = { type: 'append', path: string, value: any }
-export type Event = SetEvent | AppendEvent
+export type LensEvent = SetEvent | AppendEvent
 
+export type EventProcessor<T> = (es: LensEvent[], start: Partial<T>,) => Partial<T>
 
 export function setEventProcessor<T>(start: Partial<T>, e: SetEvent): Partial<T> {
     const lens = lensFromPath<any>(e.path)
@@ -17,7 +19,7 @@ export function appendEventProcessor<T>(start: Partial<T>, e: AppendEvent): Part
     return lens.set(start, [...oldArray, e.value])
 }
 
-export function oneProcessor<T>(start: Partial<T>, e: Event): Partial<T> {
+export function oneProcessor<T>(start: Partial<T>, e: LensEvent): Partial<T> {
     switch (e.type) {
         case 'setValue':
             return setEventProcessor(start, e)
@@ -28,6 +30,6 @@ export function oneProcessor<T>(start: Partial<T>, e: Event): Partial<T> {
     }
 }
 
-export function eventProcessor<T>(events: Event[], start: Partial<T>): Partial<T> {
+export function eventProcessor<T>(events: LensEvent[], start: Partial<T>): Partial<T> {
     return events.reduce((acc, e) => oneProcessor(acc, e), start)
 }

@@ -1,11 +1,11 @@
 import React from "react";
-import {lensFromPath} from "../../optics/optics";
+import {appendPath, lensFromPath} from "../../optics/optics";
+import {useStateOps} from "../../../index";
 
 
 export type FieldRendererProps<T> = {
+    path: string
     id: string
-    value: Partial<T>
-    onChanged: (value: Partial<T>) => void
 }
 
 export type FieldRenderer = <T, >(fieldInputs: FieldRendererProps<T>) => JSX.Element
@@ -15,13 +15,14 @@ export const RenderStringInput: FieldRenderer = <T, >
 (
     fieldInputs: FieldRendererProps<T>
 ) => {
-    const {id, value, onChanged} = fieldInputs
-    const lens = lensFromPath<T>(id)
-    let initialState = lens.get(value);
+    const {path, id} = fieldInputs
+    const [state, setValue] = useStateOps<T>()
+    const lens = lensFromPath<T>(appendPath(path,id))
+    let initialState = lens.get(state);
     const [text, setText] = React.useState(initialState);
 
     function onChange() {
-        return onChanged(lens.set(value, text));
+        return setValue(path, id, text)
     }
 
     return (
@@ -33,8 +34,7 @@ export const RenderStringInput: FieldRenderer = <T, >
             onChange={e => setText(e.target.value)}
             onBlur={onChange}
             onKeyDown={e => {
-                if (e.key === 'Enter')
-                    onChange()
+                if (e.key === 'Enter') onChange()
             }}
         />
     );
@@ -43,14 +43,15 @@ export const RenderStringInput: FieldRenderer = <T, >
 export const renderDropDown = (options: string[]): FieldRenderer => <T, >(
     fieldInputs: FieldRendererProps<T>
 ) => {
-    const {id, value, onChanged} = fieldInputs
-    const lens = lensFromPath<T>(id)
+    const [state, setValue] = useStateOps<T>()
+    const {path, id} = fieldInputs
+    const lens = lensFromPath<T>(appendPath(path,id));
     return (
         <select
             id={id as string}
             name={id as string}
-            value={lens.get(value)}
-            onChange={e => onChanged(lens.set(value, e.target.value))}
+            value={lens.get(state)}
+            onChange={e => setValue(path, id, e.target.value)}
         >
             <option value="">Select {id as string}</option>
             {options.map((option, index) => (

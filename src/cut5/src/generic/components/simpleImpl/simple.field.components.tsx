@@ -3,16 +3,16 @@ import {getRender} from "./simple.renderers";
 import React from "react";
 import {FieldComponentsProp, SimpleComponentsMaker} from "../../hooks/use.component";
 
-export const EditField = <T, >(value: Partial<T>, setValue: (t: Partial<T>) => void) => (props: FieldComponentsProp) => {
-    const {id, renderer = 'text'} = props;
-    return <div><label htmlFor={id}>{id}</label>{getRender(renderer)({id, value, onChanged: setValue})}</div>
+export const EditField = <T, >() => (props: FieldComponentsProp) => {
+    const {id, path,
+        renderer = 'text'} = props;
+    return <div><label htmlFor={id}>{id}</label>{getRender(renderer)({path, id})}</div>
 };
 
-export const SimpleFieldComponents: SimpleComponentsMaker = <T, >(value: Partial<T>, setValue: (t: Partial<T>) => void) => {
+export const SimpleFieldComponents: SimpleComponentsMaker = <T, >() => {
     return {
-        value, setValue,
         FieldContainer: ({children}) =>
             <SimpleFormContainer>{children}</SimpleFormContainer>,
-        EditField: EditField(value, setValue),
+        EditField: EditField(),
     }
 }

@@ -4,14 +4,14 @@ import {useObjectDefnsInCountry} from "../country/useObjectDefnsInCountry";
 import {mapKeys} from "../../generic/utils/utils";
 
 export interface RenderObjectProps<Type extends string, T> {
-    initialValue: Partial<T>;
+    path: string
 }
 
 export const editObject = <Type extends string, T>(defns: CountryToObjectDef<Type>, type: Type) =>
-    ({initialValue}: RenderObjectProps<Type, T>): JSX.Element => {
-        const {EditField, FieldContainer, value} = useComponents<T>(initialValue);
+    ({path}: RenderObjectProps<Type, T>): JSX.Element => {
+        const {EditField, FieldContainer} = useComponents<T>(path);
         const defn = useObjectDefnsInCountry(defns, type);
         return <FieldContainer>{mapKeys(defn, key =>
-            <EditField id={key} renderer={defn[key]}/>)}
+            <EditField path={path} id={key} renderer={defn[key]}/>)}
         </FieldContainer>
     };

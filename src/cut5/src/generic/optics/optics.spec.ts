@@ -99,4 +99,6 @@ describe('lensFromPath', () => {
         const updatedData = set(data, 42, lensWithPath);
         expect(updatedData).toEqual({list: [undefined, undefined, 42]});
     });
+
+
 });
